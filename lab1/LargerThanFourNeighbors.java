@@ -18,6 +18,7 @@ public class LargerThanFourNeighbors {
          * 1.make code easier to read and debug
          * 2.more structure
          */
+
         for (int i = 0; i < dogs.length; i++) {
             if (i == 0)
                 if (dogs[i].weight > dogs[i+1].weight && dogs[i].weight > dogs[i+2].weight) {
