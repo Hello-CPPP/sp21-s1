@@ -7,8 +7,8 @@ import java.util.Set;
  * BST表示value的组织方式
  * */
 public class BSTMap<K extends Comparable<K>, V> implements Map61B<K, V> {
-    BSTNode root;
-    int size;
+    private BSTNode root;
+    private int size;
 
 
     private class BSTNode {
@@ -103,6 +103,10 @@ public class BSTMap<K extends Comparable<K>, V> implements Map61B<K, V> {
             }
             put(key, value, node.rchild);
         }
+    }
+
+    public void printInOrder() {
+        printInOrder(root);
     }
 
     public void printInOrder(BSTNode node) {

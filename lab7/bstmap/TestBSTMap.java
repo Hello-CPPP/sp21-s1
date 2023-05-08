@@ -93,7 +93,7 @@ public class TestBSTMap {
         for (int i = 0; i < 1; i++) {
             b.put("hi" + i, 1+i);
             //make sure put is working via containsKey and get\
-            b.printInOrder(b.root);
+            //b.printInOrder(b.root);
             assertTrue(b.get("hi"+i).equals(1+i));
         }
     }
@@ -113,7 +113,7 @@ public class TestBSTMap {
             b.put("hi" + i, 1+i);
             //make sure put is working via containsKey and get\
         }
-        b.printInOrder(b.root);
+        //b.printInOrder(b.root);
     }
 
 }
