@@ -26,14 +26,14 @@ public class TimeAList {
      * You should use the Stopwatch class. See stopwatchDemo for an example. */
     public static void timeAListConstruction() {
         // TODO: YOUR CODE HERE
-        AList<Integer> test = new AList<>();
+        AList<String> test = new AList<>();
         AList<Integer> Ns = new AList<>();
         AList<Double> times = new AList<>();
         AList<Integer> opCounts = new AList<>();
 
         int maxN = 128000;
         int basis = 1000;
-        int numberToAdd = 1;
+        String numberToAdd = "1";
 
         Stopwatch sw = new Stopwatch();
 
