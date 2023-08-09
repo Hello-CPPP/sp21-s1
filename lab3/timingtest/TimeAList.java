@@ -49,9 +49,6 @@ public class TimeAList {
                 times.addLast(timeInSecond);
             }
         }
-        System.out.println(Ns.size());
-        System.out.println(times.size());
-        System.out.println(opCounts.size());
 
         printTimingTable(Ns, times, opCounts);
 
