@@ -21,7 +21,39 @@ public class TimeAList {
         timeAListConstruction();
     }
 
+    /**
+     * Your times should be in seconds.
+     * You should use the Stopwatch class. See stopwatchDemo for an example. */
     public static void timeAListConstruction() {
         // TODO: YOUR CODE HERE
+        AList<Integer> test = new AList<>();
+        AList<Integer> Ns = new AList<>();
+        AList<Double> times = new AList<>();
+        AList<Integer> opCounts = new AList<>();
+
+        int maxN = 128000;
+        int basis = 1000;
+        int numberToAdd = 1;
+
+        Stopwatch sw = new Stopwatch();
+
+        for (int i = 1; i <= maxN; i++) {
+            test.addLast(numberToAdd);
+            if (i == basis) {
+                basis *= 2;
+
+                Ns.addLast(i);
+                opCounts.addLast(i);
+
+                double timeInSecond = sw.elapsedTime();
+                times.addLast(timeInSecond);
+            }
+        }
+        System.out.println(Ns.size());
+        System.out.println(times.size());
+        System.out.println(opCounts.size());
+
+        printTimingTable(Ns, times, opCounts);
+
     }
 }
